@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css"
+  </head>
+  <title>Trivia Quiz</title>
+  <body>
+    <h1>Star Wars Trivia Game!</h1>
+
+    <form id="quiz" name="quiz">
+      <p>What is the name of the guy in the black suit?</p>
+      <input id="textbox" type="text" name="question1" />
+
+      <p>What color is Mace Windu's Lightsaber?</p>
+      <input type="radio" id="mc" name="question2" value="Purple" />
+      Purple<br />
+      <input type="radio" id="mc" name="question2" value="Green" /> Green<br />
+      <input type="radio" id="mc" name="question2" value="Yellow" />
+      Yellow<br />
+      <input type="radio" id="mc" name="question2" value="Blue" /> Blue<br />
+
+      <p>What does "AT-AT" stand for?</p>
+      <input
+        type="radio"
+        id="mc"
+        name="question3"
+        value="Amored Tactical Assault Tank"
+      />
+      Amored Tactical Assault Tank<br />
+      <input
+        type="radio"
+        id="mc"
+        name="question3"
+        value="All Terrain Armored Transport"
+      />
+      All Terrain Armored Transport<br />
+      <input
+        type="radio"
+        id="mc"
+        name="question3"
+        value="All Terrain Attack Transformer"
+      />
+      All Terrain Attack Transformer<br />
+
+      <input
+        id="button"
+        type="button"
+        value="Your destiny awaits!"
+        onclick="check();"
+      />
+    </form>
+
+    <div id="after submit">
+      <p id="number_correct"></p>
+      <p id="countdownTimer"></p>
+    </div>
+
+    <script src="assets/javascript/app.js"></script>
+  </body>
+</html>
