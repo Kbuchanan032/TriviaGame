@@ -1,0 +1,9 @@
+html {
+  background-image: url(../images/Empire.jpg);
+  text-align: center;
+  color: rgb(177, 104, 56);
+}
+
+p {
+  background-color: black;
+}
